@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231222 00:01:03.050" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\ramaz\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Open Browser">
+<arg>http://localhost:3000</arg>
+<arg>chrome</arg>
+<msg timestamp="20231222 00:01:03.516" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20231222 00:01:03.516" endtime="20231222 00:01:03.516"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath://a[@href='/create']</arg>
+<status status="NOT RUN" starttime="20231222 00:01:03.517" endtime="20231222 00:01:03.517"/>
+</kw>
+<kw name="Page Should Contain Element">
+<arg>xpath://input[@name='title']</arg>
+<status status="NOT RUN" starttime="20231222 00:01:03.517" endtime="20231222 00:01:03.517"/>
+</kw>
+<kw name="input text">
+<arg>name:title</arg>
+<arg>${TITLE3}</arg>
+<status status="NOT RUN" starttime="20231222 00:01:03.518" endtime="20231222 00:01:03.518"/>
+</kw>
+<kw name="input text">
+<arg>name:content</arg>
+<arg>${CONTENT3}</arg>
+<status status="NOT RUN" starttime="20231222 00:01:03.520" endtime="20231222 00:01:03.520"/>
+</kw>
+<kw name="input text">
+<arg>name:author</arg>
+<arg>${AUTHOR3}</arg>
+<status status="NOT RUN" starttime="20231222 00:01:03.521" endtime="20231222 00:01:03.521"/>
+</kw>
+<kw name="Click Element">
+<arg>xpath://button[@type='submit']</arg>
+<status status="NOT RUN" starttime="20231222 00:01:03.523" endtime="20231222 00:01:03.523"/>
+</kw>
+<kw name="Page Should Contain Element">
+<arg>xpath://a[@href='/']</arg>
+<status status="NOT RUN" starttime="20231222 00:01:03.524" endtime="20231222 00:01:03.524"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231222 00:01:03.524" endtime="20231222 00:01:03.524"/>
+</kw>
+<status status="PASS" starttime="20231222 00:01:03.068" endtime="20231222 00:01:04.517"/>
+</kw>
+<status status="PASS" starttime="20231222 00:01:03.068" endtime="20231222 00:01:04.517"/>
+</test>
+<status status="PASS" starttime="20231222 00:01:03.051" endtime="20231222 00:01:04.518"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

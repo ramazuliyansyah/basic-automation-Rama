@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.13 on darwin)" generated="20231209 08:29:52.746" rpa="false" schemaversion="4">
+<suite id="s1" name="Basic-Automation" source="/Users/agungperdananto/Workspace/automation/basic-automation">
+<suite id="s1-s1" name="Project-Demo" source="/Users/agungperdananto/Workspace/automation/basic-automation/project-demo">
+<suite id="s1-s1-s1" name="Test-Suite-1" source="/Users/agungperdananto/Workspace/automation/basic-automation/project-demo/test-suite-1.robot">
+<test id="s1-s1-s1-t1" name="testcase-5" line="74">
+<kw name="Login Success">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://127.0.0.1:8000</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231209 08:29:52.848" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:8000'.</msg>
+<status status="PASS" starttime="20231209 08:29:52.848" endtime="20231209 08:29:54.558"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231209 08:29:54.559" level="INFO">Clicking element 'xpath://a[@href='/login']'.</msg>
+<status status="PASS" starttime="20231209 08:29:54.558" endtime="20231209 08:29:54.645"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://input[@name='email']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20231209 08:29:54.658" level="INFO">Current page contains element 'xpath://input[@name='email']'.</msg>
+<status status="PASS" starttime="20231209 08:29:54.645" endtime="20231209 08:29:54.658"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:email</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231209 08:29:54.659" level="INFO">Typing text 'test@mail.com' into text field 'name:email'.</msg>
+<status status="PASS" starttime="20231209 08:29:54.658" endtime="20231209 08:29:54.748"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name:password</arg>
+<arg>${PASS-1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231209 08:29:54.748" level="INFO">Typing text '123456' into text field 'name:password'.</msg>
+<status status="PASS" starttime="20231209 08:29:54.748" endtime="20231209 08:29:54.800"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231209 08:29:54.800" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20231209 08:29:54.800" endtime="20231209 08:29:54.961"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/manage']</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20231209 08:29:55.022" level="INFO">Current page contains element 'xpath://a[@href='/listings/manage']'.</msg>
+<status status="PASS" starttime="20231209 08:29:54.961" endtime="20231209 08:29:55.022"/>
+</kw>
+<status status="PASS" starttime="20231209 08:29:52.848" endtime="20231209 08:29:55.022"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/listings/manage']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231209 08:29:55.023" level="INFO">Clicking element 'xpath://a[@href='/listings/manage']'.</msg>
+<status status="PASS" starttime="20231209 08:29:55.022" endtime="20231209 08:29:55.122"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='delete']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231209 08:29:55.122" level="INFO">Clicking element 'xpath://button[@id='delete']'.</msg>
+<status status="PASS" starttime="20231209 08:29:55.122" endtime="20231209 08:29:55.204"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231209 08:29:55.204" endtime="20231209 08:29:55.280"/>
+</kw>
+<status status="PASS" starttime="20231209 08:29:52.847" endtime="20231209 08:29:55.280"/>
+</test>
+<status status="PASS" starttime="20231209 08:29:52.846" endtime="20231209 08:29:55.281"/>
+</suite>
+<status status="PASS" starttime="20231209 08:29:52.759" endtime="20231209 08:29:55.282"/>
+</suite>
+<status status="PASS" starttime="20231209 08:29:52.748" endtime="20231209 08:29:55.283"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Basic-Automation">Basic-Automation</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Project-Demo">Basic-Automation.Project-Demo</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Test-Suite-1">Basic-Automation.Project-Demo.Test-Suite-1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20231222 00:07:05.452" rpa="false" schemaversion="4">
+<suite id="s1" name="Project-Demo" source="c:\Users\ramaz\basic-automation\project-demo">
+<suite id="s1-s1" name="Test-Suite-1" source="c:\Users\ramaz\basic-automation\project-demo\test-suite-1.robot">
+<test id="s1-s1-t1" name="testcase-3 Delete Post" line="43">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://localhost:3000</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231222 00:07:05.626" level="INFO">Opening browser 'chrome' to base url 'http://localhost:3000'.</msg>
+<status status="PASS" starttime="20231222 00:07:05.625" endtime="20231222 00:07:07.263"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://a[@href='/delete/']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231222 00:07:07.266" level="INFO">Clicking element 'xpath://a[@href='/delete/']'.</msg>
+<status status="PASS" starttime="20231222 00:07:07.264" endtime="20231222 00:07:07.316"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>action=ACCEPT</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20231222 00:07:07.316" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20231222 00:07:07.316" endtime="20231222 00:07:07.322"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>All Post</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231222 00:07:07.381" level="INFO">Current page contains text 'All Post'.</msg>
+<status status="PASS" starttime="20231222 00:07:07.325" endtime="20231222 00:07:07.381"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231222 00:07:09.383" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231222 00:07:07.382" endtime="20231222 00:07:09.383"/>
+</kw>
+<status status="PASS" starttime="20231222 00:07:05.625" endtime="20231222 00:07:09.384"/>
+</test>
+<status status="PASS" starttime="20231222 00:07:05.620" endtime="20231222 00:07:09.385"/>
+</suite>
+<status status="PASS" starttime="20231222 00:07:05.457" endtime="20231222 00:07:09.388"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Project-Demo">Project-Demo</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test-Suite-1">Project-Demo.Test-Suite-1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
